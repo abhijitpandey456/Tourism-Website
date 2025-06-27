@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookNest - Your E-Book Library</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-purple-700">📚 BookNest</h1>
+    <nav class="space-x-4 text-gray-600">
+      <a href="#" class="hover:text-purple-600">Home</a>
+      <a href="#" class="hover:text-purple-600">Library</a>
+      <a href="#" class="hover:text-purple-600">About</a>
+      <a href="#" class="hover:text-purple-600">Contact</a>
+       <button onclick="toggleModal()" class="bg-green-600 text-white px-4 py-1 rounded-full hover:bg-gray-800">
+  Sign In
+</button>
+    </nav>
+  </header>
+
+  
+  <!-- Hero Section -->
+  <section class="text-center py-12 px-4 bg-purple-100">
+    <h2 class="text-3xl font-bold text-purple-700">Discover, Read, and Enjoy</h2>
+    <p class="text-gray-700 mt-2">Explore a collection of curated e-books at your fingertips.</p>
+  </section>
+
+  <!-- Featured Books -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-6 text-gray-800">📖 Featured E-Books</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Book Card -->
+      <div class="bg-white shadow-md rounded-lg p-4 text-center">
+        <img src="https://knygynas.biz/cdn/shop/files/9780571334650_1024x1024@2x.jpg?v=1719493032" alt="Book Cover" class="w-full h-60 object-cover rounded">
+        <h4 class="text-lg font-bold mt-4">Normal People</h4>
+        <p class="text-sm text-gray-500">By Sally Rooney</p>
+        <a href="https://marul.ffst.hr/~bwillems/fymob/npsr.pdf" target="_blank">
+         <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Preview</button>
+        </a>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-4 text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRlQIMnjMLzPSsblShEjA4nLp_t7haykxqA&s" alt="Book Cover" class="w-full h-60 object-cover rounded">
+        <h4 class="text-lg font-bold mt-4">To Kill a Mockingbird</h4>
+        <p class="text-sm text-gray-500">Harper Lee</p>
+        <a href="https://www.raio.org/TKMFullText.pdf" target="_blank">
+         <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Preview</button>
+        </a>
+      </div>
+      
+      <div class="bg-white shadow-md rounded-lg p-4 text-center">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546091617i/15823480.jpg" alt="Book Cover" class="w-full h-60 object-cover rounded">
+        <h4 class="text-lg font-bold mt-4">Anna Karenina </h4>
+        <p class="text-sm text-gray-500">Leo Tolstoy</p>
+        <a href="https://dn790000.ca.archive.org/0/items/annakareninatols00tolsiala/annakareninatols00tolsiala.pdf" target="_blank">
+         <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Preview</button>
+        </a>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-4 text-center">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546091617i/15823480.jpg" alt="Book Cover" class="w-full h-60 object-cover rounded">
+        <h4 class="text-lg font-bold mt-4">Anna Karenina </h4>
+        <p class="text-sm text-gray-500">Leo Tolstoy</p>
+        <a href="https://dn790000.ca.archive.org/0/items/annakareninatols00tolsiala/annakareninatols00tolsiala.pdf" target="_blank">
+         <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Preview</button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Genre Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-xl sm:text-2xl font-semibold text-gray-800">Browse Genres</h2>
+    <a href="#" class="text-green-600 text-sm font-medium hover:underline">(view all)</a>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+    <!-- Genre Card -->
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://markarmstrongillustration.com/wp-content/uploads/2012/06/spanishmoss1.jpg?w=584" alt="Romance" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">ROMANCE</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://media.istockphoto.com/id/547436912/photo/bungee-jumping.jpg?s=612x612&w=0&k=20&c=yGAdtv_o5h9uzsLhHFxU9al_H-3EzgSCuqRiJ9Hq08A=" alt="Action" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">ACTION & ADVENTURE</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://t4.ftcdn.net/jpg/12/61/71/65/240_F_1261716553_s28DSy8lkQjiIIJzH1LXi33Auv005ikS.jpg" alt="Mystery" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">MYSTERY & THRILLER</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-4.png?itok=GnwAOhnC" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">BIOGRAPHIES & HISTORY</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-5.png?itok=ZsV-_DoX" alt="Children" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">CHILDREN’S</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-6.png?itok=YeKxttk6" alt="Young Adult" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">YOUNG ADULT</span>
+      </div>
+    </div>
+
+    <!-- Add More Genres -->
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://c4.wallpaperflare.com/wallpaper/502/249/177/artwork-fantasy-art-wallpaper-preview.jpg" alt="Fantasy" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">FANTASY</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-8.png?itok=ac6V9m1y" alt="Historical Fiction" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">HISTORICAL FICTION</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://img.freepik.com/free-photo/halloween-wallpaper-with-zombie-hand_23-2149122586.jpg?semt=ais_hybrid&w=740" alt="Horror" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">HORROR</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://ik.imagekit.io/panmac/tr:f-auto,w-740,pr-true//bcd02f72-b50c-0179-8b4b-5e44f5340bd4/50596028-7aa4-4a78-8aa1-a733da90b08a/Best-literary-fiction.webp" alt="Literary Fiction" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">LITERARY FICTION</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-11.png?itok=g4ML-Jmk" alt="Non-fiction" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">NON-FICTION</span>
+      </div>
+    </div>
+
+    <div class="relative group overflow-hidden rounded shadow">
+      <img src="https://static.scientificamerican.com/sciam/cache/file/C51BE585-F913-4327-9F0E02FCB6321923_source.jpg?w=1200" alt="Science Fiction" class="w-full h-32 object-cover group-hover:scale-105 transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <span class="text-white font-semibold text-sm">SCIENCE FICTION</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Preview Modal -->
+  <div id="previewModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+    <div class="bg-white p-6 rounded-lg w-11/12 max-w-md relative">
+      <button onclick="closePreview()" class="absolute top-2 right-4 text-xl text-gray-500 hover:text-black">&times;</button>
+      <h2 id="previewTitle" class="text-xl font-bold mb-2 text-purple-700"></h2>
+      <p class="text-sm text-gray-700">This is a preview of the selected book. To read more, please sign in or download the full version.</p>
+    </div>
+  </div>
+
+ <!-- Promotional Banner -->
+<section class="relative bg-cover bg-center h-64 flex items-center justify-center text-center text-white"
+         style="background-image: url('https://img.freepik.com/premium-photo/marginalization-replacement-arabic-language_950002-361350.jpg');">
+  <div class="bg-black bg-opacity-60 p-6 rounded-lg shadow-lg max-w-xl">
+    <h2 class="text-xl md:text-2xl font-semibold mb-2">PROMOTE YOUR BOOK TO 200,000 READERS!</h2>
+    <p class="text-sm mb-1">Get your book in front of over 200,000 engaged subscribers with the ManyBooks Newsletter.</p>
+    <p class="text-sm mb-2">Perfect for new releases, promos, and boosting sales.</p>
+    <p class="text-sm font-medium mb-4">Affordable. Effective. Author-approved.</p>
+    <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded font-semibold shadow-md transition">
+      ADVERTISE WITH US TODAY
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-10 mt-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <!-- Library -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-white">Library</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Genres</a></li>
+        <li><a href="#" class="hover:underline">Languages</a></li>
+        <li><a href="#" class="hover:underline">Authors</a></li>
+      </ul>
+    </div>
+
+    <!-- Community -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-white">Community</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Articles</a></li>
+        <li><a href="#" class="hover:underline">Author Interviews</a></li>
+        <li><a href="#" class="hover:underline">Newsletter</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-white">Company</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Author Services</a></li>
+        <li><a href="#" class="hover:underline">About / Contact</a></li>
+        <li><a href="#" class="hover:underline">Accessibility Statement</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3 text-white">Follow</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Facebook</a></li>
+        <li><a href="#" class="hover:underline">Twitter</a></li>
+        <li><a href="#" class="hover:underline">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-rose-500 mt-8 pt-4 text-center text-xs text-white">
+    <p>© 2025 Advertical Media LLC. All Rights Reserved. &nbsp;&nbsp; 
+       <a href="#" class="hover:underline">Terms</a> - 
+       <a href="#" class="hover:underline">Privacy</a>
+    </p>
+  </div>
+</footer>
+ <!-- Sign In Modal -->
+  <!-- Sign In Button -->
+<button onclick="toggleModal()" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">
+  Sign In
+</button>
+
+<!-- Sign Up Modal -->
+<div id="signModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-8 rounded-lg w-full max-w-md relative">
+    <button onclick="toggleModal()" class="absolute top-2 right-2 text-xl text-gray-600 hover:text-black">&times;</button>
+    
+    <h2 class="text-2xl font-bold mb-6">Connect your Google account</h2>
+    
+    <form id="signUpForm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1">Name</label>
+          <input type="text" name="name" class="w-full border px-3 py-2 rounded" required />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Username</label>
+          <input type="text" name="username" class="w-full border px-3 py-2 rounded" required />
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <label class="block font-semibold mb-1">Email</label>
+        <input type="email" name="email" class="w-full border px-3 py-2 rounded" required />
+      </div>
+
+      <div class="mt-4">
+        <label class="block font-semibold mb-1">Password</label>
+        <input type="password" name="password" class="w-full border px-3 py-2 rounded" required />
+      </div>
+
+      <div class="mt-4">
+        <label class="inline-flex items-center">
+          <input type="checkbox" id="terms" class="mr-2" />
+          I agree with the <a href="#" class="text-blue-600 underline">terms and conditions</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="w-full bg-black text-white py-3 rounded-full mt-6 font-semibold hover:bg-gray-800">
+        Create Account
+      </button>
+
+      <p class="text-center text-sm mt-4">
+        Already have an account? <a href="#" class="text-blue-600 underline">Sign In</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+
+ <!-- JavaScript sign in -->
+ <script>
+  function toggleModal() {
+    const modal = document.getElementById("signModal");
+    modal.classList.toggle("hidden");
+  }
+
+  document.getElementById("signUpForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = this.name.value.trim();
+    const username = this.username.value.trim();
+    const email = this.email.value.trim();
+    const password = this.password.value.trim();
+    const agreed = document.getElementById("terms").checked;
+
+    if (!name || !username || !email || !password || !agreed) {
+      alert("Please fill all fields and accept the terms.");
+      return;
+    }
+
+    localStorage.setItem("user", JSON.stringify({ name, username, email }));
+
+    alert("✅ Account Created Successfully!");
+    this.reset();
+    toggleModal();
+  });
+</script>
+
+
+
+  <!-- Scripts -->
+  <script>
+    function openPreview(title) {
+      document.getElementById("previewModal").classList.remove("hidden");
+      document.getElementById("previewModal").classList.add("flex");
+      document.getElementById("previewTitle").textContent = title;
+    }
+
+    function closePreview() {
+      document.getElementById("previewModal").classList.add("hidden");
+      document.getElementById("previewModal").classList.remove("flex");
+    }
+  </script>
+
+</body>
+</html>
